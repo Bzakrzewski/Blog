@@ -1,0 +1,221 @@
+@import url('reset.css');
+
+html {font-size: 62.5%;
+      font-family: 'Merriweather', serif;
+      color: #000;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+10,b3bead+100 */
+background: #fcfff4; /* Old browsers */
+background: -moz-linear-gradient(45deg, #fcfff4 10%, #b3bead 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #fcfff4 10%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #fcfff4 10%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+width: 100vw;
+background-size: contain;
+background-repeat: no repeat;
+} 
+
+h1 {
+  font-size: 7.5rem;
+  font-weight: 700;
+  position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2%;
+    bottom: 8%;
+    color: #000;
+    display: inline-block;
+    z-index: 1;
+}
+
+.pic{
+  display: block;
+   position: relative;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+     width: 100vw;
+     height: 20rem;
+     margin-bottom: 1rem;
+}
+
+.openmenu:hover .headmenu {
+  display:block;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  background-color: #b3bead;
+  border-radius: 50%;
+  width: 5rem;
+  z-index: 444;
+  cursor: pointer;
+}
+
+.headmenu {
+  background-color: grey;
+  color: white;
+  position: absolute;
+  height: 42rem;
+  z-index: 222;
+  width: 100vw;
+  top: 0;
+  display: none;
+}
+
+.formula {
+  padding: 5%;
+  width: 30vw;
+  float: left;
+}
+
+textarea {
+  margin-top: 0.5rem;
+  width: 20.8vw;
+  height: 10vh;
+}
+
+button {
+  margin-left: -3rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+nav{
+  padding: 10%;
+  padding-top: 5%;
+  margin-right: 5%;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  font-size: 3rem;
+  line-height: 2;
+  cursor: pointer;
+} 
+
+hgroup {
+  position: relative;
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  padding: 2rem;
+  width: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.start {
+  margin-top: 2rem;
+}
+
+h4 {
+    font-size: 3rem;
+    color: #fff;
+    background-color: grey;
+    display: block;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    top: 70%;
+    left: 57%;
+}
+
+h3 {
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 0.2rem 0.2rem grey;
+    margin: 5%;
+}
+
+.paragraph{
+  column-count: 2;
+  margin-bottom: 5%;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.leftp {
+  position: relative;
+  display: inline-block;
+  margin-left: 3rem;
+  margin-right: 25%;
+}
+
+.between{
+  width: 20%;
+  height: 40%;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rightp {
+  position: relative;
+  margin-right: 3rem;
+  margin-left: 25%;
+}
+
+footer {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1200px){
+  .between{
+  height: 30%;
+  }
+}
+
+@media screen and (max-width: 935px){
+  h1{
+    font-size: 6rem;
+    width: 70%;
+  }
+  .between {
+    display: none; 
+    }
+
+@media screen and (max-width: 740px){
+  h1{
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+ .paragraph{
+    column-count: 1;
+  }
+  .leftp, .rightp {
+    margin: 5%;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .leftp, .rightp {
+    margin: 8%;}
+}
